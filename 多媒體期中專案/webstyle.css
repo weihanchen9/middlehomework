@@ -1,0 +1,211 @@
+* {
+    box-sizing: border-box;
+}
+
+/* 設定背景顏色 */
+header {
+    background-color: #ffd501;
+    text-align: center;
+    color: #444444;
+    margin: 0px;
+    padding: 20px;
+}
+
+
+body {
+    background-color: rgb(249, 249, 118);
+    margin: 0;
+}
+
+footer {
+    background-color: #ffd501;
+    text-align: center;
+    color: #444444;
+    padding: 10px;
+}
+
+/* 設定聯絡資料、email快捷鍵*/
+
+.image-text-block {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 0 100px;
+}
+
+.image-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-text img {
+    display: block;
+    margin: auto;
+}
+
+.image-text h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.image-text h2 a {
+    color: black;
+    text-decoration: none;
+}
+
+.image-text h2 a:hover {
+    text-decoration: underline;
+}
+
+/*頭像、基本資料、專業技能*/
+.container {
+    position: relative;
+    top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.profile-pic {
+    margin-left: 50px;
+    margin-right: 100px;
+}
+
+.basic-info {
+    border-radius: 12%;
+    border: dotted;
+    border-color: white;
+    border-width: 5px;
+    width: 400px;
+    height: 280px;
+    background-color: rgb(255, 194, 251);
+    padding: 10px;
+    text-align: left;
+    margin-right: 150px;
+}
+
+.basic-info h2 {
+    text-align: center;
+}
+
+.skills {
+    height: 360px;
+    width: 250px;
+    text-align: left;
+    margin-right: -30px;
+}
+
+.skills h2 {
+    text-align: left;
+}
+
+.skills h3 {
+    padding-top: 20px;
+}
+
+.skills-pic {
+    height: 205px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+
+
+/* 學習背景定位 */
+.educationbg {
+    position: relative;
+    top: 200px;
+    left: 70px;
+}
+
+.school-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.school {
+    margin: 0 10px;
+    text-align: center;
+}
+
+
+/* 設定卡通人物圖片的大小和位置 */
+#person {
+    position: relative;
+    top: 20px;
+    background-size: contain;
+    animation: moveImage 30s linear infinite;
+
+}
+
+/* 自由發揮加分題：定義圖片移動的動畫 */
+@keyframes moveImage {
+    0% {
+        left: calc(22% - 100px);
+    }
+
+    100% {
+        left: calc(92% - 100px);
+    }
+}
+
+/* 個人經驗(跆拳羽球圖片、影片、故事分享) */
+.experience {
+    position: relative;
+    top: 100px;
+    left: 70px;
+}
+
+.exper-box {
+    position: relative;
+    top: 125px;
+    left: 230px;
+}
+
+.image-container {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 50px;
+}
+
+.text-container {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.text-container p {
+    margin: 0 20px;
+    display: inline-block;
+}
+
+.text-container a {
+    text-decoration: none;
+    color: blue;
+}
+
+.text-box {
+    position: relative;
+    top: -195px;
+    left: 950px;
+    padding: 15px;
+    background-color: antiquewhite;
+    border-radius: 20%;
+    border: double;
+    border-color: red;
+    border-width: 5px;
+    width: 450px;
+    height: 300px;
+    overflow-y: scroll;
+}
